@@ -1,8 +1,7 @@
 
-
 class Conta:
 
-    def __init__(self, numero , titular, saldo, limite):
+    def __init__(self, numero, titular, saldo, limite):
         print("COnstruindo objeto...{}".format(self))
         self.numero = numero
         self.titular = titular
@@ -10,10 +9,10 @@ class Conta:
         self.limite = limite
 
     def extrato(self):
-        print("Saldo {} do Titular {}".fomrat(self.saldo, self.titular))
+        print("Saldo {} do Titular {}".format(self.saldo, self.titular))
 
     def deposita(self, valor):
         self.saldo += valor
 
-    def deposita(self, valor):
+    def saca(self, valor):
         self.saldo -= valor
